@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4/fonts/remixicon.min.css" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2/cdn/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2/cdn/shoelace-autoloader.js"></script>
         <link rel="shortcut icon" type="image/png" href="favicon.png">
         <title>Simon Brunning</title>
     </head>
@@ -44,7 +45,22 @@
                     <a href="https://twitter.com/brunns" data-tooltip="Twitter"><i class="ri-twitter-fill"></i>&nbsp;@brunns</a>
                 </div>
             </div>
-            <img src="img/3-chopsticks.jpg" alt="Simon Brunning"/>
+            <sl-divider></sl-divider>
+            <sl-carousel autoplay loop navigation class="aspect-ratio" style="--aspect-ratio: 2/3;" slides-per-page="2" slides-per-move="1">
+                <sl-carousel-item>
+                    <img src="img/simon-1.jpeg" alt="Simon Brunning holding 3 chopsticks"/>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <img src="img/simon-2.jpeg" alt="Simon Brunning wearing a hat and sunglasses in Rhodes"/>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <img src="img/simon-3.jpeg" alt="Simon Brunning steering a narrowboat"/>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <img src="img/simon-4.jpeg" alt="Simon Brunning with a silly handlebar moustache"/>
+                </sl-carousel-item>
+            </sl-carousel>
+            <sl-divider></sl-divider>
             <p>
                 He/him. Guardian-reading, <span data-tooltip="actually carnivorous">tofu-eating</span> wokerati. Leftie. Father. Nerd. <a href="https://python.org" data-tooltip="Python">Pythonista</a>. <a href="https://agilemanifesto.org/" data-tooltip="Agile Manifesto">Agileista</a>. <a href="https://thoughtworks.com" data-tooltip="Thoughtworks">Thoughtworker</a>. Ex <a href="https://www.gov.uk/government/organisations/government-digital-service" data-tooltip="Government Digital Service">GDS</a>. Secularist. Rationalist and empiricist. South Londoner. Comedy groupie. Good hugger. Music lover. CD buyer & ripper. Radio 4 listener.
             </p>
