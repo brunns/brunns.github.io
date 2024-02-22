@@ -1,0 +1,15 @@
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    flex-grow: 1;
+    min-width: 25%;
+}
+
+@media (max-width: 1200px) {
+    .link {
+        min-width: 50%;
+    }
+}
