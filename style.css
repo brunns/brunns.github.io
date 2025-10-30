@@ -5,7 +5,7 @@
 
 .link {
     flex-grow: 1;
-    min-width: 20%;
+    min-width: 25%;
 }
 
 @media (max-width: 1200px) {
