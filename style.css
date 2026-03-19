@@ -13,3 +13,19 @@
         min-width: 50%;
     }
 }
+
+.counter-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+.counter-hero {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 0.5rem;
+}
