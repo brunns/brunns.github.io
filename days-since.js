@@ -2,9 +2,14 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('dayCounter', () => ({
         params: new URLSearchParams(window.location.search),
 
+        init() {
+            const titleText = `It has been ${this.count} ${this.unit} since ${this.subject}`;
+            document.title = titleText;
+        },
+
         get count() {
             const dateStr = this.params.get('last');
-            if (!dateStr) return '0';
+            if (!dateStr) return 0;
 
             const start = dayjs(dateStr).startOf('day');
             const now = dayjs().startOf('day');
